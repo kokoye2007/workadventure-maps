@@ -25,5 +25,7 @@ export default defineConfig({
         ...scripts,
       },
     },
+    assetsInclude: ['**/*.tmj', '**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif'],
+    copyPublicDir: true,
   },
 });
