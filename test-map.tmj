@@ -127,7 +127,7 @@
     {
       "columns": 8,
       "firstgid": 1,
-      "image": "tilesets/WA_Room_Builder.png",
+      "image": "public/tilesets/WA_Room_Builder.png",
       "imageheight": 192,
       "imagewidth": 256,
       "margin": 0,
