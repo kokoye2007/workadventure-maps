@@ -1,7 +1,7 @@
 {
-  "name": "cherry-maps-wa",
+  "name": "workadventure-maps",
   "version": "1.0.0",
-  "description": "Cherry themed WorkAdventure maps with local testing",
+  "description": "WorkAdventure map starter template using official map-starter-kit format",
   "license": "MIT",
   "type": "module",
   "scripts": {
