@@ -1,8 +1,13 @@
 /// <reference types="@workadventure/iframe-api-typings" />
 
+import { bootstrapExtra } from "@workadventure/scripting-api-extra";
+
 // Initialize test map
 WA.onInit().then(() => {
     console.log('Test map with default tileset loaded');
+    
+    // Initialize the scripting API extra features
+    bootstrapExtra();
     
     // Set spawn point in center of room
     WA.player.moveTo(320, 240);
@@ -22,5 +27,12 @@ WA.room.area.onEnter('center').subscribe(() => {
 });
 
 WA.room.area.onLeave('center').subscribe(() => {
-    WA.ui.closePopup();
+    // Remove action message when leaving the area
+    WA.ui.displayActionMessage({
+        message: "",
+        callback: () => {}
+    });
 });
+
+// Export to make this a module
+export {};

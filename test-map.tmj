@@ -117,7 +117,7 @@
     {
       "name": "script",
       "type": "string", 
-      "value": "scripts/test-map.ts"
+      "value": "./src/scripts/test-map.ts"
     }
   ],
   "renderorder": "right-down",
